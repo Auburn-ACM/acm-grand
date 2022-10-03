@@ -27,7 +27,8 @@ function HexToName() {
   };
 
   useEffect(() => {
-    const curr = input.replaceAll(' ', '');
+    let curr = input.replaceAll(' ', '');
+    curr = curr.replaceAll('\n', '');
     if (curr.length !== 0 && !hex_regex.test(curr)) {
       setErrorState(true);
     } else {
@@ -35,20 +36,26 @@ function HexToName() {
       if (curr.length !== 0) {
         parseValidInput(curr);
       }
+      else {
+        setBinary('');
+        setOutname('');
+      }
     }
-  }, [input])
+  }, [input]);
   const inputStyle = {
     borderColor: errorState ? 'red' : 'black',
     backgroundColor: errorState ? '#f001' : 'white'
   }
   return (
     <>
-      <input className='text-orange rounded-sm border-2 border-black mx-auto font-code focus:outline-none px-1 w-3/5' 
+      <textarea className='text-orange rounded-sm border-2 border-black mx-auto font-code focus:outline-none px-1 w-3/5' 
         type="text" 
         value={input} 
         onChange={(e) => setInput(e.target.value)} 
         label="Hexadecimal Value" 
-        style={inputStyle} />
+        rows={3}
+        autoComplete={false}
+        />
       <div className='text-center font-semibold font-code text-light-blue'>
         {/* {errorState && <h1 className='text-red-500'>Invalid input</h1>} */}
         {!errorState && <h1>{outname}</h1>}

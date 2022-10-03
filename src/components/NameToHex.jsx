@@ -22,6 +22,9 @@ function NameToHex() {
       if (stringName.length !== 0) {
         parseInput(stringName);
       }
+      else {
+        setOutHex('');
+      }
     }
   }, [stringName])
   const inputStyle = {
@@ -35,7 +38,9 @@ function NameToHex() {
         value={stringName} 
         onChange={(e) => setStringName(e.target.value)} 
         label="Hexadecimal Value" 
-        style={inputStyle} />
+        style={inputStyle} 
+        autoComplete={false}
+        />
       <div className='text-center font-semibold font-code text-light-blue'>
         {/* {errorState && <h1 className='text-red-500'>Invalid input</h1>} */}
         {!errorState && <h1>{outHex}</h1>}

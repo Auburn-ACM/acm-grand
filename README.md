@@ -1,3 +1,8 @@
+# ACM GRAND Project
+This project is hosted online using Github Pages at https://auburn-acm.github.io/acm-grand/
+
+--- 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

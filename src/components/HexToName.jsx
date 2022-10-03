@@ -48,13 +48,13 @@ function HexToName() {
   }
   return (
     <>
-      <textarea className='text-orange rounded-sm border-2 border-black mx-auto font-code focus:outline-none px-1 w-3/5' 
+      <textarea className='text-orange rounded-sm border-2 border-black mx-auto font-code focus:outline-none px-1 w-4/5' 
         type="text" 
         value={input} 
         onChange={(e) => setInput(e.target.value)} 
         label="Hexadecimal Value" 
         rows={3}
-        autoComplete={false}
+        autoComplete="off"
         />
       <div className='text-center font-semibold font-code text-light-blue'>
         {/* {errorState && <h1 className='text-red-500'>Invalid input</h1>} */}

@@ -39,7 +39,7 @@ function NameToHex() {
         onChange={(e) => setStringName(e.target.value)} 
         label="Hexadecimal Value" 
         style={inputStyle} 
-        autoComplete={false}
+        autoComplete="off"
         />
       <div className='text-center font-semibold font-code text-light-blue'>
         {/* {errorState && <h1 className='text-red-500'>Invalid input</h1>} */}

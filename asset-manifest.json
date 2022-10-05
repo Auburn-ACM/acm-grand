@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/acm-grand/static/css/main.0cdbcb07.css",
-    "main.js": "/acm-grand/static/js/main.77e2fdbe.js",
+    "main.js": "/acm-grand/static/js/main.2e5dbefe.js",
     "index.html": "/acm-grand/index.html",
     "main.0cdbcb07.css.map": "/acm-grand/static/css/main.0cdbcb07.css.map",
-    "main.77e2fdbe.js.map": "/acm-grand/static/js/main.77e2fdbe.js.map"
+    "main.2e5dbefe.js.map": "/acm-grand/static/js/main.2e5dbefe.js.map"
   },
   "entrypoints": [
     "static/css/main.0cdbcb07.css",
-    "static/js/main.77e2fdbe.js"
+    "static/js/main.2e5dbefe.js"
   ]
 }
